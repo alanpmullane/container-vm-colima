@@ -82,7 +82,7 @@ colima delete
 ```
 
 
-## git stuff
+## git repo commands
 
 ### git repo setup and access
 
