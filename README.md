@@ -28,9 +28,9 @@ brew install colima
 colima start
 ```
 
-- start with more cpu and memory
+- start with more cpu (4 cores), 8g for memory and 100g for disk space
 ```
-colima start --cpu 4 --memory 8
+colima start --cpu 4 --memory 8 --disk 100
 ```
 
 ### k8s support
@@ -56,7 +56,7 @@ colima model setup
 
 - start with multiple options
 ```
-colima start --kubernetes --cpu 4 --memory 8 --runtime docker --vm-type krunkit
+colima start --kubernetes --cpu 4 --memory 8 --disk 100 --runtime docker --vm-type krunkit
 ```
 
 - run some models
