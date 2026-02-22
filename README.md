@@ -96,7 +96,22 @@ ssh-keygen -t rsa -b 4096 -C "<add-your-user-email-here>"
 cat ~/.ssh/id_rsa.pub
 ```
 
-- clone repo (crete first on github.com)
+- check git user config
+Run the following command to check git config and if no values or incorrect values for user.name and user.email then update to match user email used in previous step to setup
+ssh key.
+
+```
+git config --global --list
+```
+
+- configure git user
+Do this step only if user name and user email are not set or incorrect from previous step to check git user config.
+```
+git config --global user.name "<your-user-name>"
+git config --global user.email "<your-user-email>"
+```
+
+- clone git repo (crete first on github.com)
 ```
 git clone git@github.com:<username>/container-vm-colima.git
 ```
